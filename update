@@ -1,0 +1,6 @@
+   public void update(Observable o, Object arg) {
+        Product product = (Product) arg;
+        String message = "The price of " + product.getName() + " has changed to " + product.getPrice();
+        user.notify(message);
+    }
+}
