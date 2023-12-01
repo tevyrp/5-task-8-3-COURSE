@@ -1,0 +1,3 @@
+public interface PriceTracker {
+    void trackPrice(Product product, Store store);
+}
