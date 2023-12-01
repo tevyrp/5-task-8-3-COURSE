@@ -1,0 +1,8 @@
+public interface Store {
+    String getName();
+    void setName(String name);
+    String getUrl();
+    void setUrl(String url);
+    String getLocation();
+    void setLocation(String location);
+}
