@@ -6,3 +6,6 @@ public class PriceChangeNotifier implements Observer {
         this.user = user;
         this.priceTracker = priceTracker;
     }
+ public void subscribe(Product product, Store store) {
+        priceTracker.trackPrice(product, store);
+    }
