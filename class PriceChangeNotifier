@@ -1,0 +1,8 @@
+public class PriceChangeNotifier implements Observer {
+    private User user;
+    private PriceTracker priceTracker;
+
+    public PriceChangeNotifier(User user, PriceTracker priceTracker) {
+        this.user = user;
+        this.priceTracker = priceTracker;
+    }
