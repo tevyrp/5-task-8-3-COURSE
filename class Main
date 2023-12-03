@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        
+        Store store = new OnlineStore("MyStore", "https://mystore.com", "New York");
+
+        Product product = new SimpleProduct("Phone", "A great phone", 499.99);
+
+        PriceTracker priceTracker = new SimplePriceTracker();
+
+        User user = new User("JohnDoe@example.com");
+
+        PriceChangeNotifier priceChangeNotifier = new PriceChangeNotifier(user, priceTracker);
+        priceChangeNotifier.subscribe(product, store);
+    }
+}
